@@ -477,6 +477,23 @@ body.menu-open {
     display: block;
 }
 
+/* 隐藏视频控制条，确保自动循环播放 */
+.uniwee-video::-webkit-media-controls {
+    display: none !important;
+}
+
+.uniwee-video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.uniwee-video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.uniwee-video {
+    pointer-events: none; /* 防止用户点击暂停 */
+}
+
 .video-container iframe {
     position: absolute;
     top: 0;

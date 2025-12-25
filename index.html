@@ -241,25 +241,25 @@
             <h2>了解UniWee - 您的留学住宿首选</h2>
             <div class="videos-grid">
                 <div class="video-container">
-                    <video class="uniwee-video" controls autoplay muted loop playsinline preload="auto">
+                    <video class="uniwee-video" autoplay muted loop playsinline webkit-playsinline preload="auto">
                         <source src="./Movie-Temp-6.mp4" type="video/mp4">
                         您的浏览器不支持视频播放。
                     </video>
                 </div>
                 <div class="video-container">
-                    <video class="uniwee-video" controls autoplay muted loop playsinline preload="auto">
+                    <video class="uniwee-video" autoplay muted loop playsinline webkit-playsinline preload="auto">
                         <source src="./Movie-Temp-2.mp4" type="video/mp4">
                         您的浏览器不支持视频播放。
                     </video>
                 </div>
                 <div class="video-container">
-                    <video class="uniwee-video" controls autoplay muted loop playsinline preload="auto">
+                    <video class="uniwee-video" autoplay muted loop playsinline webkit-playsinline preload="auto">
                         <source src="./Movie-Temp-3.mp4" type="video/mp4">
                         您的浏览器不支持视频播放。
                     </video>
                 </div>
                 <div class="video-container">
-                    <video class="uniwee-video" controls autoplay muted loop playsinline preload="auto">
+                    <video class="uniwee-video" autoplay muted loop playsinline webkit-playsinline preload="auto">
                         <source src="./Movie-Temp-4.mp4" type="video/mp4">
                         您的浏览器不支持视频播放。
                     </video>
@@ -267,24 +267,59 @@
             </div>
             <p class="video-description">在UniWee，不仅有舒适的居住空间，更有充满活力的社区生活。与来自世界各地的同学一起学习、交流、成长</p>
             <script>
-                // 确保所有视频自动播放
+                // 增强移动端视频自动循环播放功能
                 document.addEventListener('DOMContentLoaded', function() {
                     var videos = document.querySelectorAll('.uniwee-video');
+
+                    // 确保视频静音（自动播放的前提）
                     videos.forEach(function(video) {
-                        if (video) {
-                            video.muted = true;
-                            setTimeout(function() {
-                                var playPromise = video.play();
-                                if (playPromise !== undefined) {
-                                    playPromise.then(function() {
-                                        console.log('视频自动播放成功');
-                                    }).catch(function(error) {
-                                        console.log('视频需要用户交互才能播放');
+                        video.muted = true;
+                        video.setAttribute('muted', '');
+                        video.setAttribute('playsinline', '');
+                    });
+
+                    // 使用Intersection Observer监听视频进入视口
+                    if ('IntersectionObserver' in window) {
+                        var observer = new IntersectionObserver(function(entries) {
+                            entries.forEach(function(entry) {
+                                var video = entry.target;
+                                if (entry.isIntersecting) {
+                                    // 视频进入视口，尝试播放
+                                    video.play().catch(function(error) {
+                                        console.log('视频播放被阻止:', error);
                                     });
                                 }
-                            }, 500);
-                        }
-                    });
+                            });
+                        }, {
+                            threshold: 0.5 // 视频50%可见时触发
+                        });
+
+                        videos.forEach(function(video) {
+                            observer.observe(video);
+                        });
+                    }
+
+                    // 备用方案：立即尝试播放
+                    setTimeout(function() {
+                        videos.forEach(function(video) {
+                            video.play().catch(function(error) {
+                                console.log('需要用户交互才能播放');
+                            });
+                        });
+                    }, 500);
+
+                    // 监听用户的第一次交互（触摸或点击）
+                    var playOnInteraction = function() {
+                        videos.forEach(function(video) {
+                            video.play().catch(function() {});
+                        });
+                        // 移除监听器（只需要触发一次）
+                        document.removeEventListener('touchstart', playOnInteraction);
+                        document.removeEventListener('click', playOnInteraction);
+                    };
+
+                    document.addEventListener('touchstart', playOnInteraction, { once: true });
+                    document.addEventListener('click', playOnInteraction, { once: true });
                 });
             </script>
         </div>
