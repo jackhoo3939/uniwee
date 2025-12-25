@@ -1,0 +1,259 @@
+{
+  "site": {
+    "name": "UniWee",
+    "title": "UniWee - Find Your Ideal Home in Singapore",
+    "tagline": "新加坡留学生首选公寓品牌",
+    "brandSlogan": "新加坡品牌 · 品质保证",
+    "heroTitle": "体验绝佳学习和生活方式，选择UniWee",
+    "heroSubtitle": "舒适 · 安全 · 活力"
+  },
+  "contact": {
+    "phoneSG": "+65 9666 6891",
+    "phoneCN": "+86 13823383679",
+    "email": "info@uniwee.com",
+    "wechatQR": "wechat.jpg"
+  },
+  "branding": {
+    "logo": "logo1217-2.png",
+    "aboutBannerImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=500&fit=crop"
+  },
+  "social": {
+    "facebook": "https://facebook.com/uniwee",
+    "instagram": "https://instagram.com/uniwee",
+    "tiktok": "https://tiktok.com/@uniwee",
+    "youtube": "https://youtube.com/@uniwee",
+    "linkedin": "https://linkedin.com/company/uniwee"
+  },
+  "videos": [
+    "./Movie-Temp-6.mp4",
+    "./Movie-Temp-2.mp4",
+    "./Movie-Temp-3.mp4",
+    "./Movie-Temp-4.mp4"
+  ],
+  "featuredProperties": [
+    {
+      "name": "Novena Court",
+      "location": "2 Jalan Novena Barat",
+      "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop",
+      "badge": "优质公寓/别墅单间",
+      "detailPage": "properties/novena-court.html"
+    },
+    {
+      "name": "The Capri",
+      "location": "78 Stevens Road",
+      "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop",
+      "badge": "优质公寓/别墅单间",
+      "detailPage": "properties/the-capri.html"
+    },
+    {
+      "name": "Montebleu",
+      "location": "8 Minbu Road",
+      "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+      "badge": "优质公寓/别墅单间",
+      "detailPage": "properties/8-minbu-rd.html"
+    },
+    {
+      "name": "Gem Residence",
+      "location": "1 Lorong 5 Toa Payoh",
+      "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop",
+      "badge": "优质公寓/别墅单间",
+      "detailPage": "properties/gem-residence.html"
+    },
+    {
+      "name": "Gem Residence",
+      "location": "3 Lorong 5 Toa Payoh",
+      "imageUrl": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=400&h=300&fit=crop",
+      "badge": "优质公寓/别墅单间",
+      "detailPage": "properties/3-lorong-5-toa-payoh.html"
+    },
+    {
+      "name": "The Cairnhill",
+      "location": "4 Cairnhill Rise",
+      "imageUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400&h=300&fit=crop",
+      "badge": "优质公寓/别墅单间",
+      "detailPage": "properties/4-cairnhill-rise.html"
+    },
+    {
+      "name": "Telok Blangah Residence",
+      "location": "21 Telok Blangah Drive",
+      "imageUrl": "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=400&h=300&fit=crop",
+      "badge": "优质公寓/别墅单间",
+      "detailPage": "properties/21-telok-blangah-drive.html"
+    },
+    {
+      "name": "The Peak",
+      "location": "7 Balmeg Hill",
+      "imageUrl": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=300&fit=crop",
+      "badge": "优质公寓/别墅单间",
+      "detailPage": "properties/7-balmeg-hill.html"
+    },
+    {
+      "name": "Jalan Senyum Apartment",
+      "location": "Jalan Senyum",
+      "imageUrl": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop",
+      "badge": "优质公寓/别墅单间",
+      "detailPage": "properties/jalan-senyum.html"
+    },
+    {
+      "name": "Ceylon Road Residence",
+      "location": "3B Ceylon Road Singapore",
+      "imageUrl": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=400&h=300&fit=crop",
+      "badge": "优质公寓/别墅单间",
+      "detailPage": "properties/3b-ceylon-road.html"
+    },
+    {
+      "name": "Parc Esta",
+      "location": "910 Sims Ave",
+      "imageUrl": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=300&fit=crop",
+      "badge": "优质公寓/别墅单间",
+      "detailPage": "properties/parc-esta.html"
+    },
+    {
+      "name": "Lim Tua Tow Residence",
+      "location": "Lim Tua Tow Road",
+      "imageUrl": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=300&fit=crop",
+      "badge": "优质公寓/别墅单间",
+      "detailPage": "properties/lim-tua-tow-road.html"
+    }
+  ],
+  "footerProperties": {
+    "NUS附近公寓": {
+      "subtitle": "新加坡国立大学",
+      "properties": [
+        {"name": "Kent Vale", "url": "properties/kent-vale.html"},
+        {"name": "The Hillsh", "url": "properties/the-hillsh.html"},
+        {"name": "Bijou", "url": "properties/bijou.html"},
+        {"name": "Parc Riviera", "url": "properties/parc-riviera.html"},
+        {"name": "Whistler Grand", "url": "properties/whistler-grand.html"},
+        {"name": "Normanton Park", "url": "properties/normanton-park.html"},
+        {"name": "The Interlace", "url": "properties/the-interlace.html"},
+        {"name": "West Coast Park Villas", "url": "properties/west-coast-park-villas.html"}
+      ]
+    },
+    "Curtin附近公寓": {
+      "subtitle": "科廷大学",
+      "properties": [
+        {"name": "The Peak", "url": "properties/the-peak.html"},
+        {"name": "Kent Ridge Hill Residences", "url": "properties/kent-ridge-hill-residences.html"},
+        {"name": "The Verandah Residences", "url": "properties/the-verandah-residences.html"},
+        {"name": "Terra Hill", "url": "properties/terra-hill.html"},
+        {"name": "Parc Imperial", "url": "properties/parc-imperial.html"},
+        {"name": "Flynn Park", "url": "properties/flynn-park.html"},
+        {"name": "Wharf Residences", "url": "properties/wharf-residences.html"},
+        {"name": "Pasir Panjang Landed Estate", "url": "properties/pasir-panjang-landed-estate.html"}
+      ]
+    },
+    "PSB附近公寓": {
+      "subtitle": "PSB学院",
+      "properties": [
+        {"name": "The Sail @ Marina Bay", "url": "properties/the-sail-marina-bay.html"},
+        {"name": "Marina Bay Residences", "url": "properties/marina-bay-residences.html"},
+        {"name": "Marina One Residences", "url": "properties/marina-one-residences.html"},
+        {"name": "Zyon Grand", "url": "properties/zyon-grand.html"},
+        {"name": "River Valley Apartments", "url": "properties/river-valley-apartments.html"},
+        {"name": "Eden Residences Capitol", "url": "properties/eden-residences-capitol.html"},
+        {"name": "One Bernam", "url": "properties/one-bernam.html"},
+        {"name": "Sentosa Cove Villas", "url": "properties/sentosa-cove-villas.html"}
+      ]
+    },
+    "Amity/Raffles附近": {
+      "subtitle": "阿米提及莱佛士",
+      "properties": [
+        {"name": "TripleOne Somerset", "url": "properties/tripleone-somerset.html"},
+        {"name": "Coliwoo Orchard", "url": "properties/coliwoo-orchard.html"},
+        {"name": "Cairnhill Nine", "url": "properties/cairnhill-nine.html"},
+        {"name": "The Orchard Residences", "url": "properties/the-orchard-residences.html"},
+        {"name": "Skyline @ Orchard Boulevard", "url": "properties/skyline-orchard-boulevard.html"},
+        {"name": "Watermark @ Robertson Quay", "url": "properties/watermark-robertson-quay.html"},
+        {"name": "Martin Modern", "url": "properties/martin-modern.html"}
+      ]
+    },
+    "JCU附近公寓": {
+      "subtitle": "詹姆斯库克大学",
+      "properties": [
+        {"name": "Sims Urban Oasis", "url": "properties/sims-urban-oasis.html"},
+        {"name": "The Antares", "url": "properties/the-antares.html"},
+        {"name": "Penrose", "url": "properties/penrose.html"},
+        {"name": "Tre Residences", "url": "properties/tre-residences.html"},
+        {"name": "Park Place Residences", "url": "properties/park-place-residences.html"},
+        {"name": "Central Grove", "url": "properties/central-grove.html"},
+        {"name": "Rezi 24", "url": "properties/rezi-24.html"},
+        {"name": "Geylang Landed Houses", "url": "properties/geylang-landed-houses.html"}
+      ]
+    },
+    "SMU附近公寓": {
+      "subtitle": "新加坡管理大学",
+      "properties": [
+        {"name": "Duo Residences", "url": "properties/duo-residences.html"},
+        {"name": "The M", "url": "properties/the-m.html"},
+        {"name": "Midtown Modern", "url": "properties/midtown-modern.html"},
+        {"name": "South Beach Residences", "url": "properties/south-beach-residences.html"},
+        {"name": "V on Shenton", "url": "properties/v-on-shenton.html"},
+        {"name": "Emerald Hill", "url": "properties/emerald-hill.html"},
+        {"name": "City Gate", "url": "properties/city-gate.html"},
+        {"name": "Sophia Hills", "url": "properties/sophia-hills.html"}
+      ]
+    },
+    "SIM/SUSS附近公寓": {
+      "subtitle": "新加坡新跃社科大学",
+      "properties": [
+        {"name": "Nava Grove", "url": "properties/nava-grove.html"},
+        {"name": "Clementi Park", "url": "properties/clementi-park.html"},
+        {"name": "The Cascadia", "url": "properties/the-cascadia.html"},
+        {"name": "Mayfair Modern", "url": "properties/mayfair-modern.html"},
+        {"name": "Maplewoods", "url": "properties/maplewoods.html"},
+        {"name": "Daintree Residence", "url": "properties/daintree-residence.html"},
+        {"name": "Pine Grove", "url": "properties/pine-grove.html"},
+        {"name": "Sunset Way Villas", "url": "properties/sunset-way-villas.html"}
+      ]
+    },
+    "NAFA附近公寓": {
+      "subtitle": "南洋艺术学院",
+      "properties": [
+        {"name": "Wilkie 80", "url": "properties/wilkie-80.html"},
+        {"name": "Bencoolen House", "url": "properties/bencoolen-house.html"},
+        {"name": "8@Mount Sophia", "url": "properties/8-mount-sophia.html"},
+        {"name": "Liv on Wilkie", "url": "properties/liv-on-wilkie.html"},
+        {"name": "Nomu", "url": "properties/nomu.html"},
+        {"name": "The Cathay Residences", "url": "properties/the-cathay-residences.html"},
+        {"name": "Haus on Handy", "url": "properties/haus-on-handy.html"},
+        {"name": "Mackenzie 88", "url": "properties/mackenzie-88.html"}
+      ]
+    },
+    "其他学校附近": {
+      "subtitle": "Kaplan/LSBF等",
+      "properties": [
+        {"name": "Parc Esta", "url": "properties/parc-esta.html"},
+        {"name": "Irwell Hill Residences", "url": "properties/irwell-hill-residences.html"},
+        {"name": "The Interlace (交织苑)", "url": "properties/the-interlace-jzw.html"},
+        {"name": "Midtown Modern (国浩时代城)", "url": "properties/midtown-modern-ghsdc.html"},
+        {"name": "Principal Garden (嘉御苑)", "url": "properties/principal-garden.html"},
+        {"name": "One Pearl Bank (万宝轩)", "url": "properties/one-pearl-bank.html"},
+        {"name": "City Square Residences", "url": "properties/city-square-residences.html"},
+        {"name": "D'Leedon (丽敦苑)", "url": "properties/d-leedon.html"}
+      ]
+    },
+    "学生最喜爱公寓": {
+      "subtitle": "热门推荐",
+      "properties": [
+        {"name": "7 BALMEG HILL, THE PEAK", "url": "properties/7-balmeg-hill.html"},
+        {"name": "Lim Tua Tow Road", "url": "properties/lim-tua-tow-road.html"},
+        {"name": "4 Cairnhill Rise, the cairnhill", "url": "properties/4-cairnhill-rise.html"},
+        {"name": "8 Minbu Rd, Montebleu", "url": "properties/8-minbu-rd.html"},
+        {"name": "Jalan Senyum", "url": "properties/jalan-senyum.html"},
+        {"name": "3B Ceylon Road Singapore", "url": "properties/3b-ceylon-road.html"},
+        {"name": "21 Telok Blangah Drive", "url": "properties/21-telok-blangah-drive.html"},
+        {"name": "3 Lorong 5 Toa Payoh, Gem Residence", "url": "properties/3-lorong-5-toa-payoh.html"}
+      ]
+    }
+  },
+  "about": {
+    "description": "UniWee是新加坡知名公寓品牌，为留学生服务近10年。从第一批落地狮城的学子开始，我们便专注于把"住"这件大事做成"家"的模样：安全地段、步行到校、灵活租期、一站配齐。如今，我们的房源已覆盖新加坡核心高校圈，累计服务 10,000+ 国际学生，陪伴他们完成从入学到毕业的成长旅程。未来，UniWee 仍将立足新加坡，用更懂留学生的标准、贴心的服务态度，为每一位远渡重洋的年轻人提供安心、省心、有温度的居住体验——让出国第一步，就从"到家"开始。",
+    "objective": "To remove the friction from student housing—so every international student can secure a safe, comfortable, and inspiring home within 24 hours of arrival, anywhere in Southeast Asia.",
+    "vision": "By 2030 UniWee will be the first name students and universities trust for off-campus living across the region, setting the benchmark for transparency, sustainability, and community-centric design.",
+    "culture": "We treat students at heart: curious, multicultural, and allergic to \"that's not my job.\" Decisions are data-driven, conversations are candid, and celebrations are loud. We measure success by how quickly a new resident says, \"I feel at home.\""
+  },
+  "footer": {
+    "copyright": "© 2024 UniWee. All Rights Reserved."
+  }
+}

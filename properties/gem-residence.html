@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem Residences - UniWee学生公寓</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .property-hero {
+            background: linear-gradient(135deg, #5DD9C1 0%, #4DD0BF 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: #fff;
+        }
+        .property-hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .property-hero .location {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .property-content {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+        .property-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .property-image-main {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .property-image-main img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .property-details h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .property-description {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .property-features {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .property-features h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .property-features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .property-features ul li {
+            padding: 8px 0;
+            color: #666;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .property-features ul li:last-child {
+            border-bottom: none;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .cta-btn {
+            padding: 15px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        .btn-primary {
+            background-color: #5DD9C1;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #4DD0BF;
+        }
+        .btn-secondary {
+            background-color: #fff;
+            color: #5DD9C1;
+            border: 2px solid #5DD9C1;
+        }
+        .btn-secondary:hover {
+            background-color: #5DD9C1;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .property-layout {
+                grid-template-columns: 1fr;
+            }
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html"><img src="../logo1217-2.png" alt="UniWee Logo"></a>
+                </div>
+                <nav class="nav-menu">
+                    <a href="../index.html#footer">房源</a>
+                    <a href="../student-services.html">学生服务</a>
+                    <a href="../about.html">关于我们</a>
+                    <a href="../index.html#contact">联系我们</a>
+                </nav>
+                <div class="header-right">
+                    <div class="contact-info">
+                        <p>+65 9666 6891</p>
+                        <p>+86 13823383679</p>
+                        <p style="font-size: 12px; color: #E31E24; margin-top: 5px; font-weight: 600;">新加坡品牌 · 品质保证</p>
+                    </div>
+                    <div class="social-icons">
+                        <img src="../wechat.jpg" alt="WeChat QR Code" class="qr-code">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Property Hero Section -->
+    <section class="property-hero">
+        <div class="container">
+            <h1>Gem Residences</h1>
+            <p class="location">1 Lorong 5 Toa Payoh, Singapore | District 12</p>
+        </div>
+    </section>
+
+    <!-- Property Content Section -->
+    <section class="property-content">
+        <div class="container">
+            <div class="property-layout">
+                <div class="property-image-main">
+                    <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&h=600&fit=crop" alt="Gem Residences">
+                </div>
+                <div class="property-details">
+                    <h2>Gem Residences 学生公寓</h2>
+                    <div class="property-description">
+                        <p>Gem Residences是2020年全新落成的现代化学生公寓，位于新加坡第12区Toa Payoh核心地带。公寓距离Braddell地铁站仅6分钟步行距离，交通十分便利。这里特别受中国留学生青睐，因为周边生活设施完善，还有多家中餐馆和超市。</p>
+                        <p>公寓最大的亮点是配备了五星级酒店式管理服务：专业管家、清洁服务、健身课程，甚至还有医疗人员驻点。留学生可以通过礼宾部订购食品和杂货，让你安心专注学业。周边教育资源丰富，多所知名学府近在咫尺，学习氛围浓厚，是追求高品质留学生活的理想之选。</p>
+                    </div>
+
+                    <div class="property-features">
+                        <h3>房源亮点</h3>
+                        <ul>
+                            <li>🏢 全新公寓：2020年建成，设施现代化</li>
+                            <li>🚇 交通便利：6分钟步行到Braddell地铁站</li>
+                            <li>🏫 学校众多：周边多所名校，学习氛围好</li>
+                            <li>🛏️ 房型丰富：1-5房多种户型，满足不同需求</li>
+                            <li>🏊 设施齐全：泳池、按摩池、健身房、BBQ区</li>
+                            <li>🧹 管家服务：专业清洁、健身课程、医疗驻点</li>
+                            <li>🍜 生活方便：礼宾部可订购食品杂货，中餐馆多</li>
+                            <li>🐕 宠物友好：宠物泳池，爱宠人士首选</li>
+                            <li>🔒 安全保障：24小时保安，智能化管理</li>
+                        </ul>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="../index.html#contact" class="cta-btn btn-primary">立即咨询租房</a>
+                        <a href="../index.html" class="cta-btn btn-secondary">返回首页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Footer -->
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="bottom-footer-content">
+                <div class="footer-links">
+                    <a href="../index.html">首页</a>
+                    <a href="../index.html#footer">房源列表</a>
+                    <a href="../student-services.html">学生服务</a>
+                    <a href="../about.html">关于我们</a>
+                    <a href="../index.html#contact">联系我们</a>
+                </div>
+                <div class="footer-brand">
+                    <h3>UniWee</h3>
+                    <p>新加坡留学生首选公寓品牌</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://facebook.com/uniwee" target="_blank" class="social-icon">Facebook</a>
+                    <a href="https://instagram.com/uniwee" target="_blank" class="social-icon">Instagram</a>
+                    <a href="https://tiktok.com/@uniwee" target="_blank" class="social-icon">TikTok</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 UniWee. All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marina Bay Residences - UniWee</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .property-hero {
+            background: linear-gradient(135deg, #4a5f7f 0%, #5a6f8f 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: #fff;
+        }
+        .property-hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .property-hero .location {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .property-content {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+        .property-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .property-image-main {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .property-image-main img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .property-details h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .property-description {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .property-features {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .property-features h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .property-features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .property-features ul li {
+            padding: 8px 0;
+            color: #666;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .property-features ul li:last-child {
+            border-bottom: none;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .cta-btn {
+            padding: 15px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        .btn-primary {
+            background-color: #4DD0BF;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #3BB9A8;
+        }
+        .btn-secondary {
+            background-color: #fff;
+            color: #4a5f7f;
+            border: 2px solid #4a5f7f;
+        }
+        .btn-secondary:hover {
+            background-color: #4a5f7f;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .property-layout {
+                grid-template-columns: 1fr;
+            }
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html"><img src="../logo1217-2.png" alt="UniWee Logo"></a>
+                </div>
+                <nav class="nav-menu">
+                    <a href="../index.html#footer">房源</a>
+                    <a href="../student-services.html">学生服务</a>
+                    <a href="../index.html#contact">联系我们</a>
+                </nav>
+                <div class="header-right">
+                    <div class="contact-info">
+                        <p>+65 9666 6891</p>
+                        <p>+86 13823383679</p>
+                    </div>
+                    <div class="social-icons">
+                        <img src="../wechat.jpg" alt="WeChat QR Code" class="qr-code">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Property Hero Section -->
+    <section class="property-hero">
+        <div class="container">
+            <h1>Marina Bay Residences</h1>
+            <p class="location">Central Boulevard, Singapore | District 1</p>
+        </div>
+    </section>
+
+    <!-- Property Content Section -->
+    <section class="property-content">
+        <div class="container">
+            <div class="property-layout">
+                <div class="property-image-main">
+                    <img src="https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?w=800&h=600&fit=crop" alt="Marina Bay Residences">
+                </div>
+                <div class="property-details">
+                    <h2>关于 Marina Bay Residences</h2>
+                    <div class="property-description">
+                        <p>Marina Bay Residences位于新加坡滨海湾核心地段，是由CapitaLand打造的高端公寓项目。项目包含三座高层住宅塔楼，坐拥壮丽的海湾及城市天际线景观，为住客提供五星级的都会生活体验，是追求奢华生活方式的理想选择。</p>
+                        <p>公寓地处第1区黄金地段，毗邻PSB学院、SMU及多所知名学府，步行可达Raffles Place金融区。项目配备度假村式设施，包括50米泳池、健身房、网球场、空中花园等。交通极为便利，靠近Downtown Line及Circle Line地铁站，便捷往返全岛各地，是留学生的优选豪宅。</p>
+                    </div>
+
+                    <div class="property-features">
+                        <h3>房源特色</h3>
+                        <ul>
+                            <li>位置：第1区Marina Bay，靠近PSB及SMU</li>
+                            <li>房型：1至4房豪华单位，设计现代时尚</li>
+                            <li>设施：50米泳池、健身房、网球场、空中花园</li>
+                            <li>交通：步行至Downtown及Raffles Place地铁站</li>
+                            <li>环境：坐拥滨海湾及城市景观，视野开阔</li>
+                            <li>社区：高端国际化社区，24小时礼宾服务</li>
+                        </ul>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="../index.html#contact" class="cta-btn btn-primary">立即咨询</a>
+                        <a href="../index.html" class="cta-btn btn-secondary">返回首页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Footer -->
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="bottom-footer-content">
+                <div class="footer-links">
+                    <a href="../about.html">关于我们</a>
+                    <a href="../terms.html">使用条款</a>
+                    <a href="../privacy.html">隐私政策</a>
+                    <a href="../index.html#contact">联系我们</a>
+                </div>
+                <div class="footer-brand">
+                    <h3>UniWee</h3>
+                    <p>新加坡留学生首选公寓品牌</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://facebook.com/uniwee" target="_blank" class="social-icon">Facebook</a>
+                    <a href="https://instagram.com/uniwee" target="_blank" class="social-icon">Instagram</a>
+                    <a href="https://youtube.com/@uniwee" target="_blank" class="social-icon">YouTube</a>
+                    <a href="https://linkedin.com/company/uniwee" target="_blank" class="social-icon">LinkedIn</a>
+                    <a href="https://tiktok.com/@uniwee" target="_blank" class="social-icon">TikTok</a>
+                </div>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="footer-contact" id="contact">
+                <div class="contact-section">
+                    <h4>联系我们</h4>
+                    <div class="contact-details">
+                        <div class="contact-phones">
+                            <p><strong>新加坡:</strong> +65 9666 6891</p>
+                            <p><strong>中国:</strong> +86 13823383679</p>
+                        </div>
+                        <div class="contact-qr">
+                            <img src="../wechat.jpg" alt="微信二维码" class="footer-qr-code">
+                            <p>扫码添加微信咨询</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 UniWee. All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>

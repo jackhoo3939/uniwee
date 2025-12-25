@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem Residence - 网红公寓 - UniWee学生公寓</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .property-hero {
+            background: linear-gradient(135deg, #4a5f7f 0%, #5a6f8f 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: #fff;
+        }
+        .property-hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .property-hero .location {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .property-content {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+        .property-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .property-image-main {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .property-image-main img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .property-details h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .property-description {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .property-features {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .property-features h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .property-features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .property-features ul li {
+            padding: 8px 0;
+            color: #666;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .property-features ul li:last-child {
+            border-bottom: none;
+        }
+        .info-section {
+            background-color: #fff5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #E31E24;
+        }
+        .info-section h4 {
+            font-size: 18px;
+            color: #E31E24;
+            margin-bottom: 10px;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .cta-btn {
+            padding: 15px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        .btn-primary {
+            background-color: #4DD0BF;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #3BB9A8;
+        }
+        .btn-secondary {
+            background-color: #fff;
+            color: #4a5f7f;
+            border: 2px solid #4a5f7f;
+        }
+        .btn-secondary:hover {
+            background-color: #4a5f7f;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .property-layout {
+                grid-template-columns: 1fr;
+            }
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html"><img src="../logo1217-2.png" alt="UniWee Logo"></a>
+                </div>
+                <nav class="nav-menu">
+                    <a href="../index.html#footer">房源</a>
+                    <a href="../student-services.html">学生服务</a>
+                    <a href="../about.html">关于我们</a>
+                    <a href="../index.html#contact">联系我们</a>
+                </nav>
+                <div class="header-right">
+                    <div class="contact-info">
+                        <p>+65 9666 6891</p>
+                        <p>+86 13823383679</p>
+                        <p style="font-size: 12px; color: #E31E24; margin-top: 5px; font-weight: 600;">新加坡品牌 · 品质保证</p>
+                    </div>
+                    <div class="social-icons">
+                        <img src="../wechat.jpg" alt="WeChat QR Code" class="qr-code">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="property-hero">
+        <div class="container">
+            <h1>Gem Residence - 网红公寓</h1>
+            <p class="location">1 Lorong 5 Toa Payoh, Singapore</p>
+        </div>
+    </section>
+
+    <section class="property-content">
+        <div class="container">
+            <div class="property-layout">
+                <div class="property-image-main">
+                    <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&h=600&fit=crop" alt="Gem Residence">
+                </div>
+                <div class="property-details">
+                    <h2>高端星级公寓，美食天堂</h2>
+
+                    <div class="property-description">
+                        <p><strong>基本介绍：</strong>高端星级公寓，近EASB、JCU，大巴窑美食天堂。高楼层单位视野覆盖半个新加坡。</p>
+                    </div>
+
+                    <div class="info-section">
+                        <h4>🚇 交通配套</h4>
+                        <p>步行至 Toa Payoh（大巴窑）/ Braddell（布莱德）地铁站。</p>
+                    </div>
+
+                    <div class="info-section">
+                        <h4>🛒 周边设施</h4>
+                        <p>楼下即是熟食中心、超市、诊所，生活零距离。</p>
+                    </div>
+
+                    <div class="info-section">
+                        <h4>🏊 公寓配套</h4>
+                        <p>俱乐部会所、盐水游泳池、24小时礼宾服务、健身房、BBQ。</p>
+                    </div>
+
+                    <div class="property-features">
+                        <h3>房源亮点</h3>
+                        <ul>
+                            <li>🏢 高端星级公寓，网红打卡地</li>
+                            <li>🏫 近EASB、JCU，上学便利</li>
+                            <li>🍜 大巴窑美食天堂，楼下即是熟食中心</li>
+                            <li>🏙️ 高楼层单位视野覆盖半个新加坡</li>
+                            <li>🏊 俱乐部会所、盐水游泳池、24小时礼宾服务</li>
+                            <li>💪 健身房、BBQ设施完善</li>
+                        </ul>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="../index.html#contact" class="cta-btn btn-primary">立即咨询租房</a>
+                        <a href="../index.html" class="cta-btn btn-secondary">返回首页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="bottom-footer-content">
+                <div class="footer-links">
+                    <a href="../index.html">首页</a>
+                    <a href="../index.html#footer">房源列表</a>
+                    <a href="../student-services.html">学生服务</a>
+                    <a href="../about.html">关于我们</a>
+                    <a href="../index.html#contact">联系我们</a>
+                </div>
+                <div class="footer-brand">
+                    <h3>UniWee</h3>
+                    <p>新加坡留学生首选公寓品牌</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://facebook.com/uniwee" target="_blank" class="social-icon">Facebook</a>
+                    <a href="https://instagram.com/uniwee" target="_blank" class="social-icon">Instagram</a>
+                    <a href="https://tiktok.com/@uniwee" target="_blank" class="social-icon">TikTok</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 UniWee. All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>

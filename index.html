@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniWee - Find Your Ideal Home in Singapore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="logo1217-2.png" alt="UniWee Logo">
+                </div>
+                <nav class="nav-menu">
+                    <a href="#footer" data-i18n="nav.properties">房源</a>
+                    <a href="student-services.html" data-i18n="nav.services">学生服务</a>
+                    <a href="about.html" data-i18n="nav.about">关于我们</a>
+                    <a href="#contact" data-i18n="nav.contact">联系我们</a>
+                </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="zh">中文</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <div class="header-right">
+                    <div class="contact-info">
+                        <p>+65 9666 6891</p>
+                        <p>+86 13823383679</p>
+                        <p style="font-size: 12px; color: #E31E24; margin-top: 5px; font-weight: 600;">新加坡品牌 · 品质保证</p>
+                    </div>
+                    <div class="social-icons">
+                        <img src="wechat.jpg" alt="WeChat QR Code" class="qr-code">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-particles" id="hero-particles"></div>
+        <div class="container">
+            <h1 data-i18n="hero.title">体验绝佳学习和生活方式，选择UniWee</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">舒适 · 安全 · 活力</p>
+        </div>
+    </section>
+
+    <!-- Hero Animation Script -->
+    <script>
+        // 创建粒子动画
+        function createParticles() {
+            const container = document.getElementById('hero-particles');
+            if (!container) return;
+
+            // 创建20个粒子
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (4 + Math.random() * 4) + 's';
+                container.appendChild(particle);
+            }
+
+            // 创建闪烁效果
+            for (let i = 0; i < 15; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = Math.random() * 100 + '%';
+                sparkle.style.top = Math.random() * 100 + '%';
+                sparkle.style.animationDelay = Math.random() * 2 + 's';
+                container.appendChild(sparkle);
+            }
+        }
+
+        // 页面加载后创建动画
+        document.addEventListener('DOMContentLoaded', createParticles);
+    </script>
+
+    <!-- Property Listings Grid -->
+    <section class="property-listings">
+        <div class="container">
+            <div class="property-grid">
+                <!-- Property Card 1 -->
+                <a href="properties/casa-cambio.html" class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=300&fit=crop" alt="Casa Cambio">
+                        <span class="badge">美食家社区，运动天堂</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Casa Cambio - 美食天堂、运动之心</h3>
+                        <p class="location">23 Lim Tua Tow Road</p>
+                    </div>
+                </a>
+
+                <!-- Property Card 2 -->
+                <a href="properties/the-cairnhill.html" class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400&h=300&fit=crop" alt="The Cairnhill">
+                        <span class="badge">豪宅区里的温馨之家</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>The Cairnhill (经禧) - 超大空间、步行至Amity</h3>
+                        <p class="location">4 Cairnhill Rise</p>
+                    </div>
+                </a>
+
+                <!-- Property Card 3 -->
+                <a href="properties/ceylon-road.html" class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=400&h=300&fit=crop" alt="Ceylon Road">
+                        <span class="badge">文艺生最爱</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Ceylon Road (锡兰路) - 文艺生最爱</h3>
+                        <p class="location">3B Ceylon Road</p>
+                    </div>
+                </a>
+
+                <!-- Property Card 4 -->
+                <a href="properties/the-peak-balmeg.html" class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=300&fit=crop" alt="The Peak">
+                        <span class="badge">Curtin科廷大学、NUS（国大）学生后花园</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>The Peak @ Balmeg - Curtin & NUS学生后花园</h3>
+                        <p class="location">7 Balmeg Hill</p>
+                    </div>
+                </a>
+
+                <!-- Property Card 5 -->
+                <a href="properties/jalan-senyum.html" class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop" alt="Jalan Senyum">
+                        <span class="badge">超大空间、致静享受</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>51 Jalan Senyum - 超大空间、致静享受</h3>
+                        <p class="location">51 Jalan Senyum, 418168</p>
+                    </div>
+                </a>
+
+                <!-- Property Card 6 -->
+                <a href="properties/montebleu.html" class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop" alt="Montebleu">
+                        <span class="badge">美食中心，视野极佳</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Montebleu (万宝阁) - 美食中心、视野极佳</h3>
+                        <p class="location">8 Minbu Road</p>
+                    </div>
+                </a>
+
+                <!-- Property Card 7 -->
+                <a href="properties/valley-mansion.html" class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop" alt="Valley Mansion">
+                        <span class="badge">PSB/SMU/Kaplan/NIM学生首选</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Valley Mansion - PSB/SMU/Kaplan学生首选</h3>
+                        <p class="location">54 Oxley Road</p>
+                    </div>
+                </a>
+
+                <!-- Property Card 8 -->
+                <a href="properties/novena-court.html" class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop" alt="Novena Court">
+                        <span class="badge">下楼即是地铁站</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Novena Court - 下楼即是地铁站</h3>
+                        <p class="location">2 Jalan Novena Barat</p>
+                    </div>
+                </a>
+
+                <!-- Property Card 9 -->
+                <a href="properties/the-capri.html" class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop" alt="The Capri">
+                        <span class="badge">使馆区顶级公寓</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>The Capri - 使馆区顶级公寓</h3>
+                        <p class="location">78 Stevens Road</p>
+                    </div>
+                </a>
+
+                <!-- Property Card 10 -->
+                <a href="properties/gem-residence-1.html" class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&h=300&fit=crop" alt="Gem Residence">
+                        <span class="badge">网红公寓</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Gem Residence (网红公寓)</h3>
+                        <p class="location">1 Lorong 5 Toa Payoh</p>
+                    </div>
+                </a>
+
+                <!-- Property Card 11 -->
+                <a href="properties/gem-residence-3.html" class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=400&h=300&fit=crop" alt="Gem Residence">
+                        <span class="badge">网红公寓</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Gem Residence (网红公寓)</h3>
+                        <p class="location">3 Lorong 5 Toa Payoh</p>
+                    </div>
+                </a>
+
+                <!-- Property Card 12 -->
+                <a href="properties/harbour-view-towers.html" class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=400&h=300&fit=crop" alt="Harbour View Towers">
+                        <span class="badge">面朝大海，春暖花开</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Harbour View Towers (港湾塔) - 毗邻圣淘沙</h3>
+                        <p class="location">21 Telok Blangah Drive</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section 1 - Video Section -->
+    <section class="feature-section green-bg">
+        <div class="container">
+            <h2>了解UniWee - 您的留学住宿首选</h2>
+            <div class="videos-grid">
+                <div class="video-container">
+                    <video class="uniwee-video" controls autoplay muted loop playsinline preload="auto">
+                        <source src="./Movie-Temp-6.mp4" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video class="uniwee-video" controls autoplay muted loop playsinline preload="auto">
+                        <source src="./Movie-Temp-2.mp4" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video class="uniwee-video" controls autoplay muted loop playsinline preload="auto">
+                        <source src="./Movie-Temp-3.mp4" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video class="uniwee-video" controls autoplay muted loop playsinline preload="auto">
+                        <source src="./Movie-Temp-4.mp4" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                </div>
+            </div>
+            <p class="video-description">在UniWee，不仅有舒适的居住空间，更有充满活力的社区生活。与来自世界各地的同学一起学习、交流、成长</p>
+            <script>
+                // 确保所有视频自动播放
+                document.addEventListener('DOMContentLoaded', function() {
+                    var videos = document.querySelectorAll('.uniwee-video');
+                    videos.forEach(function(video) {
+                        if (video) {
+                            video.muted = true;
+                            setTimeout(function() {
+                                var playPromise = video.play();
+                                if (playPromise !== undefined) {
+                                    playPromise.then(function() {
+                                        console.log('视频自动播放成功');
+                                    }).catch(function(error) {
+                                        console.log('视频需要用户交互才能播放');
+                                    });
+                                }
+                            }, 500);
+                        }
+                    });
+                });
+            </script>
+        </div>
+    </section>
+
+    <!-- Feature Section 2 - Grey with Yellow -->
+    <section class="feature-section grey-bg">
+        <div class="container">
+            <div class="feature-content yellow-box">
+                <h2>公寓中居住，而我们不止于此</h2>
+                <p class="section-subtitle">UniWee为您提供的不仅仅是一个住所</p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🏠</div>
+                        <h3>精心设计的居住空间</h3>
+                        <p>现代化装修，配备齐全的家具和设施，让您拎包入住</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>安全保障</h3>
+                        <p>24/7监控系统和专业安保，让您的居住更加安心</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📖</div>
+                        <h3>学业无忧服务</h3>
+                        <p>课程中英文辅导，确保毕业无忧</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💬</div>
+                        <h3>中文客服支持</h3>
+                        <p>专业的中文团队，随时为您解决问题</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📍</div>
+                        <h3>优越地理位置</h3>
+                        <p>靠近各大高校和地铁站，出行便利</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎓</div>
+                        <h3>学生专享优惠</h3>
+                        <p>为留学生提供特别优惠价格和灵活租期</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section 3 - Yellow/Lime -->
+    <section class="feature-section yellow-bg">
+        <div class="container">
+            <div class="feature-content white-box">
+                <h2>为什么选择UniWee？</h2>
+                <div class="reasons-grid">
+                    <div class="reason">
+                        <h3>位置便捷</h3>
+                        <p>公寓住宅靠近PSB,Curtin,Kaplan,Amity,JCU,LSBF等校区</p>
+                    </div>
+                    <div class="reason">
+                        <h3>安全保障</h3>
+                        <p>经过严格筛选的优质房源</p>
+                    </div>
+                    <div class="reason">
+                        <h3>中文服务</h3>
+                        <p>无障碍沟通，解决租房难题</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section 4 - Grey with Yellow -->
+    <section class="feature-section grey-bg">
+        <div class="container">
+            <div class="feature-content yellow-box">
+                <h2>精彩公寓，邀您加入</h2>
+                <p class="section-subtitle">在UniWee，您将体验到充满活力的社区生活</p>
+                <div class="community-features">
+                    <div class="community-item">
+                        <div class="community-icon">🎉</div>
+                        <h3>社交活动</h3>
+                        <p>定期举办聚会、文化交流活动，结识来自世界各地的朋友</p>
+                    </div>
+                    <div class="community-item">
+                        <div class="community-icon">📚</div>
+                        <h3>学习氛围</h3>
+                        <p>安静的学习空间和图书角，与志同道合的同学一起进步</p>
+                    </div>
+                    <div class="community-item">
+                        <div class="community-icon">🏋️</div>
+                        <h3>健身娱乐</h3>
+                        <p>配备健身房、台球室等设施，丰富您的课余生活</p>
+                    </div>
+                    <div class="community-item">
+                        <div class="community-icon">🍳</div>
+                        <h3>共享厨房</h3>
+                        <p>宽敞的公共厨房，与室友一起烹饪家乡美食</p>
+                    </div>
+                    <div class="community-item">
+                        <div class="community-icon">🤝</div>
+                        <h3>互助友爱</h3>
+                        <p>建立深厚友谊，在异国他乡找到归属感</p>
+                    </div>
+                    <div class="community-item">
+                        <div class="community-icon">🌟</div>
+                        <h3>生活服务</h3>
+                        <p>提供清洁、维修等贴心服务，让您专注学业</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <!-- Column 1: NUS附近公寓 -->
+                <div class="footer-column">
+                    <h4>NUS附近公寓</h4>
+                    <p class="column-subtitle">新加坡国立大学</p>
+                    <ul>
+                        <li><a href="properties/kent-vale.html">Kent Vale</a></li>
+                        <li><a href="properties/the-hillsh.html">The Hillsh</a></li>
+                        <li><a href="properties/bijou.html">Bijou</a></li>
+                        <li><a href="properties/parc-riviera.html">Parc Riviera</a></li>
+                        <li><a href="properties/whistler-grand.html">Whistler Grand</a></li>
+                        <li><a href="properties/normanton-park.html">Normanton Park</a></li>
+                        <li><a href="properties/the-interlace.html">The Interlace</a></li>
+                        <li><a href="properties/west-coast-park-villas.html">West Coast Park Villas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Curtin附近公寓 -->
+                <div class="footer-column">
+                    <h4>Curtin附近公寓</h4>
+                    <p class="column-subtitle">科廷大学</p>
+                    <ul>
+                        <li><a href="properties/the-peak.html">The Peak</a></li>
+                        <li><a href="properties/kent-ridge-hill-residences.html">Kent Ridge Hill Residences</a></li>
+                        <li><a href="properties/the-verandah-residences.html">The Verandah Residences</a></li>
+                        <li><a href="properties/terra-hill.html">Terra Hill</a></li>
+                        <li><a href="properties/parc-imperial.html">Parc Imperial</a></li>
+                        <li><a href="properties/flynn-park.html">Flynn Park</a></li>
+                        <li><a href="properties/wharf-residences.html">Wharf Residences</a></li>
+                        <li><a href="properties/pasir-panjang-landed-estate.html">Pasir Panjang Landed Estate</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: PSB附近公寓 -->
+                <div class="footer-column">
+                    <h4>PSB附近公寓</h4>
+                    <p class="column-subtitle">PSB学院</p>
+                    <ul>
+                        <li><a href="properties/the-sail-marina-bay.html">The Sail @ Marina Bay</a></li>
+                        <li><a href="properties/marina-bay-residences.html">Marina Bay Residences</a></li>
+                        <li><a href="properties/marina-one-residences.html">Marina One Residences</a></li>
+                        <li><a href="properties/zyon-grand.html">Zyon Grand</a></li>
+                        <li><a href="properties/river-valley-apartments.html">River Valley Apartments</a></li>
+                        <li><a href="properties/eden-residences-capitol.html">Eden Residences Capitol</a></li>
+                        <li><a href="properties/one-bernam.html">One Bernam</a></li>
+                        <li><a href="properties/sentosa-cove-villas.html">Sentosa Cove Villas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Amity/Raffles附近公寓 -->
+                <div class="footer-column">
+                    <h4>Amity/Raffles附近</h4>
+                    <p class="column-subtitle">阿米提及莱佛士</p>
+                    <ul>
+                        <li><a href="properties/tripleone-somerset.html">TripleOne Somerset</a></li>
+                        <li><a href="properties/coliwoo-orchard.html">Coliwoo Orchard</a></li>
+                        <li><a href="properties/cairnhill-nine.html">Cairnhill Nine</a></li>
+                        <li><a href="properties/the-orchard-residences.html">The Orchard Residences</a></li>
+                        <li><a href="properties/skyline-orchard-boulevard.html">Skyline @ Orchard Boulevard</a></li>
+                        <li><a href="properties/watermark-robertson-quay.html">Watermark @ Robertson Quay</a></li>
+                        <li><a href="properties/martin-modern.html">Martin Modern</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: JCU附近公寓 -->
+                <div class="footer-column">
+                    <h4>JCU附近公寓</h4>
+                    <p class="column-subtitle">詹姆斯库克大学</p>
+                    <ul>
+                        <li><a href="properties/sims-urban-oasis.html">Sims Urban Oasis</a></li>
+                        <li><a href="properties/the-antares.html">The Antares</a></li>
+                        <li><a href="properties/penrose.html">Penrose</a></li>
+                        <li><a href="properties/tre-residences.html">Tre Residences</a></li>
+                        <li><a href="properties/park-place-residences.html">Park Place Residences</a></li>
+                        <li><a href="properties/central-grove.html">Central Grove</a></li>
+                        <li><a href="properties/rezi-24.html">Rezi 24</a></li>
+                        <li><a href="properties/geylang-landed-houses.html">Geylang Landed Houses</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 6: SMU附近公寓 -->
+                <div class="footer-column">
+                    <h4>SMU附近公寓</h4>
+                    <p class="column-subtitle">新加坡管理大学</p>
+                    <ul>
+                        <li><a href="properties/duo-residences.html">Duo Residences</a></li>
+                        <li><a href="properties/the-m.html">The M</a></li>
+                        <li><a href="properties/midtown-modern.html">Midtown Modern</a></li>
+                        <li><a href="properties/south-beach-residences.html">South Beach Residences</a></li>
+                        <li><a href="properties/v-on-shenton.html">V on Shenton</a></li>
+                        <li><a href="properties/emerald-hill.html">Emerald Hill</a></li>
+                        <li><a href="properties/city-gate.html">City Gate</a></li>
+                        <li><a href="properties/sophia-hills.html">Sophia Hills</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 7: SIM/SUSS附近公寓 -->
+                <div class="footer-column">
+                    <h4>SIM/SUSS附近公寓</h4>
+                    <p class="column-subtitle">新加坡新跃社科大学</p>
+                    <ul>
+                        <li><a href="properties/nava-grove.html">Nava Grove</a></li>
+                        <li><a href="properties/clementi-park.html">Clementi Park</a></li>
+                        <li><a href="properties/the-cascadia.html">The Cascadia</a></li>
+                        <li><a href="properties/mayfair-modern.html">Mayfair Modern</a></li>
+                        <li><a href="properties/maplewoods.html">Maplewoods</a></li>
+                        <li><a href="properties/daintree-residence.html">Daintree Residence</a></li>
+                        <li><a href="properties/pine-grove.html">Pine Grove</a></li>
+                        <li><a href="properties/sunset-way-villas.html">Sunset Way Villas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 8: NAFA附近公寓 -->
+                <div class="footer-column">
+                    <h4>NAFA附近公寓</h4>
+                    <p class="column-subtitle">南洋艺术学院</p>
+                    <ul>
+                        <li><a href="properties/wilkie-80.html">Wilkie 80</a></li>
+                        <li><a href="properties/bencoolen-house.html">Bencoolen House</a></li>
+                        <li><a href="properties/8-mount-sophia.html">8@Mount Sophia</a></li>
+                        <li><a href="properties/liv-on-wilkie.html">Liv on Wilkie</a></li>
+                        <li><a href="properties/nomu.html">Nomu</a></li>
+                        <li><a href="properties/the-cathay-residences.html">The Cathay Residences</a></li>
+                        <li><a href="properties/haus-on-handy.html">Haus on Handy</a></li>
+                        <li><a href="properties/mackenzie-88.html">Mackenzie 88</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 9: 其他学校附近 -->
+                <div class="footer-column">
+                    <h4>其他学校附近</h4>
+                    <p class="column-subtitle">Kaplan/LSBF等</p>
+                    <ul>
+                        <li><a href="properties/parc-esta.html">Parc Esta</a></li>
+                        <li><a href="properties/irwell-hill-residences.html">Irwell Hill Residences</a></li>
+                        <li><a href="properties/the-interlace-jzw.html">The Interlace (交织苑)</a></li>
+                        <li><a href="properties/midtown-modern-ghsdc.html">Midtown Modern (国浩时代城)</a></li>
+                        <li><a href="properties/principal-garden.html">Principal Garden (嘉御苑)</a></li>
+                        <li><a href="properties/one-pearl-bank.html">One Pearl Bank (万宝轩)</a></li>
+                        <li><a href="properties/city-square-residences.html">City Square Residences</a></li>
+                        <li><a href="properties/d-leedon.html">D'Leedon (丽敦苑)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 10: 学生最喜爱公寓 -->
+                <div class="footer-column">
+                    <h4>学生最喜爱公寓</h4>
+                    <p class="column-subtitle">热门推荐</p>
+                    <ul>
+                        <li><a href="properties/7-balmeg-hill.html">7 BALMEG HILL, THE PEAK</a></li>
+                        <li><a href="properties/lim-tua-tow-road.html">Lim Tua Tow Road</a></li>
+                        <li><a href="properties/4-cairnhill-rise.html">4 Cairnhill Rise, the cairnhill</a></li>
+                        <li><a href="properties/8-minbu-rd.html">8 Minbu Rd, Montebleu</a></li>
+                        <li><a href="properties/jalan-senyum.html">Jalan Senyum</a></li>
+                        <li><a href="properties/3b-ceylon-road.html">3B Ceylon Road Singapore</a></li>
+                        <li><a href="properties/21-telok-blangah-drive.html">21 Telok Blangah Drive</a></li>
+                        <li><a href="properties/3-lorong-5-toa-payoh.html">3 Lorong 5 Toa Payoh, Gem Residence</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Footer -->
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="bottom-footer-content">
+                <div class="footer-links">
+                    <a href="index.html">首页</a>
+                    <a href="index.html#footer">房源列表</a>
+                    <a href="student-services.html">学生服务</a>
+                    <a href="about.html">关于我们</a>
+                    <a href="index.html#contact">联系我们</a>
+                    <a href="terms.html">使用条款</a>
+                    <a href="privacy.html">隐私政策</a>
+                </div>
+                <div class="footer-brand">
+                    <h3>UniWee</h3>
+                    <p>新加坡留学生首选公寓品牌</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://facebook.com/uniwee" target="_blank" class="social-icon">Facebook</a>
+                    <a href="https://instagram.com/uniwee" target="_blank" class="social-icon">Instagram</a>
+                    <a href="https://youtube.com/@uniwee" target="_blank" class="social-icon">YouTube</a>
+                    <a href="https://linkedin.com/company/uniwee" target="_blank" class="social-icon">LinkedIn</a>
+                    <a href="https://tiktok.com/@uniwee" target="_blank" class="social-icon">TikTok</a>
+                </div>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="footer-contact" id="contact">
+                <div class="contact-section">
+                    <h4>联系我们</h4>
+                    <div class="contact-details">
+                        <div class="contact-phones">
+                            <p><strong>新加坡:</strong> +65 9666 6891</p>
+                            <p><strong>中国:</strong> +86 13823383679</p>
+                        </div>
+                        <div class="contact-qr">
+                            <img src="wechat.jpg" alt="微信二维码" class="footer-qr-code">
+                            <p>扫码添加微信咨询</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 UniWee. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- 翻译系统 -->
+    <script>
+        // 翻译数据
+        const translations = {
+            zh: {
+                nav: {
+                    properties: '房源',
+                    services: '学生服务',
+                    about: '关于我们',
+                    contact: '联系我们'
+                },
+                hero: {
+                    title: '体验绝佳学习和生活方式，选择UniWee',
+                    subtitle: '舒适 · 安全 · 活力'
+                }
+            },
+            en: {
+                nav: {
+                    properties: 'Properties',
+                    services: 'Student Services',
+                    about: 'About Us',
+                    contact: 'Contact Us'
+                },
+                hero: {
+                    title: 'Experience Excellent Study & Lifestyle, Choose UniWee',
+                    subtitle: 'Comfortable · Safe · Vibrant'
+                }
+            }
+        };
+
+        // 当前语言（默认中文）
+        let currentLang = localStorage.getItem('language') || 'zh';
+
+        // 初始化语言
+        function initLanguage() {
+            setLanguage(currentLang);
+            updateActiveButton(currentLang);
+        }
+
+        // 设置语言
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('language', lang);
+
+            // 更新所有带data-i18n属性的元素
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                const keys = key.split('.');
+                let translation = translations[lang];
+
+                // 遍历嵌套的key
+                for (let k of keys) {
+                    translation = translation[k];
+                    if (!translation) break;
+                }
+
+                if (translation) {
+                    element.textContent = translation;
+                }
+            });
+
+            // 更新HTML lang属性
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+        }
+
+        // 更新按钮激活状态
+        function updateActiveButton(lang) {
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+
+        // 绑定语言切换按钮事件
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始化语言
+            initLanguage();
+
+            // 绑定点击事件
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    setLanguage(lang);
+                    updateActiveButton(lang);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
