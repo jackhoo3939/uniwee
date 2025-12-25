@@ -87,6 +87,46 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Hamburger Menu Button - 汉堡菜单按钮 */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.hamburger-menu span {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger button animation - X形动画 */
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Prevent background scrolling when menu is open - 防止菜单打开时背景滚动 */
+body.menu-open {
+    overflow: hidden;
+}
+
 .header-right {
     display: flex;
     align-items: center;
@@ -751,29 +791,154 @@ body {
 }
 
 @media (max-width: 768px) {
+    /* Container - 容器 */
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Header - 头部 */
+    .header {
+        padding: 15px 0;
+    }
+
     .header-content {
-        flex-direction: column;
-        gap: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+
+    /* Show hamburger menu, hide desktop nav - 显示汉堡菜单，隐藏桌面导航 */
+    .hamburger-menu {
+        display: flex;
+        order: 2;
     }
 
     .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        gap: 0;
+        padding: 80px 30px 30px;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease;
+        z-index: 1000;
+        overflow-y: auto;
         margin-left: 0;
     }
 
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu a {
+        padding: 15px 0;
+        border-bottom: 1px solid #f0f0f0;
+        font-size: 18px;
+        min-height: 44px; /* Touch optimization - 触摸优化 */
+    }
+
+    /* Language switcher in mobile menu - 语言切换器在移动菜单内 */
+    .language-switcher {
+        order: 10;
+        margin: 15px 0 0 0;
+    }
+
+    /* Header right side simplification - 头部右侧简化 */
+    .header-right {
+        flex-direction: row;
+        gap: 15px;
+        order: 3;
+        width: auto;
+    }
+
+    /* Hide contact info on mobile (show in footer) - 移动端隐藏联系信息 */
+    .contact-info {
+        display: none;
+    }
+
+    /* WeChat QR code shrink to 60px - 微信二维码缩小至60px */
+    .qr-code {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Hero section - 首页横幅 */
+    .hero {
+        padding: 60px 0;
+    }
+
     .hero h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .hero-subtitle {
+        font-size: 18px;
+    }
+
+    /* Search form - 搜索表单 */
+    .search-form {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 14px 16px;
+        font-size: 16px; /* Prevent iOS auto-zoom - 防止iOS自动缩放 */
+    }
+
+    .search-btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+        min-height: 44px; /* Touch optimization - 触摸优化 */
+    }
+
+    /* Property grid - 房源网格 */
+    .property-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .property-info h3 {
         font-size: 16px;
     }
 
-    .search-form {
-        flex-direction: column;
+    .property-info .location {
+        font-size: 13px;
     }
 
-    .property-grid {
-        grid-template-columns: repeat(2, 1fr);
+    /* Feature section - 特色区域 */
+    .feature-section {
+        padding: 50px 0;
+    }
+
+    .feature-section h2 {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+    /* Videos grid - 视频网格 */
+    .videos-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    /* Features grid - 功能网格 */
+    .features-grid,
+    .community-features {
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 
@@ -782,53 +947,291 @@ body {
         gap: 20px;
     }
 
-    .features-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .community-features {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .videos-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
+    /* Process steps - 流程步骤 */
     .process-steps {
         flex-direction: column;
     }
 
+    /* Footer - 页脚 */
     .footer-columns {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 20px;
+    }
+
+    .footer-column h4 {
+        font-size: 15px;
+    }
+
+    .footer-column ul li a {
+        font-size: 13px;
     }
 
     .bottom-footer-content {
         flex-direction: column;
         gap: 20px;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
 
     .contact-details {
         flex-direction: column;
-        gap: 30px;
+        gap: 25px;
+    }
+
+    .footer-qr-code {
+        width: 100px;
+        height: 100px;
     }
 }
 
 @media (max-width: 480px) {
-    .property-grid {
-        grid-template-columns: 1fr;
+    /* More optimizations for smaller screens - 小屏幕进一步优化 */
+    .container {
+        padding: 0 15px;
     }
 
+    /* Logo smaller - Logo更小 */
+    .logo img {
+        height: 28px;
+    }
+
+    /* WeChat QR code 50px - user requirement - 微信二维码达到用户需求的50px */
+    .qr-code {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Hero section - 首页横幅 */
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    /* Property grid single column - 房源网格单列 */
+    .property-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Titles smaller - 标题字体缩小 */
+    .feature-section h2 {
+        font-size: 24px;
+    }
+
+    .property-info h3 {
+        font-size: 15px;
+    }
+
+    /* Footer single column - 页脚单列 */
     .footer-columns {
         grid-template-columns: 1fr;
     }
 
-    .nav-menu {
-        flex-direction: column;
+    /* Social media icons - 社交媒体图标 */
+    .social-media {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-qr-code {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* Fixed Bottom Contact Bar - 固定底部联系栏（仅移动端） */
+.fixed-bottom-contact {
+    display: none; /* 桌面端隐藏 */
+}
+
+@media (max-width: 768px) {
+    .fixed-bottom-contact {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.12);
+        padding: 12px 15px;
+        z-index: 999;
+        align-items: center;
         gap: 15px;
+        border-top: 1px solid #e0e0e0;
+        backdrop-filter: blur(10px);
+    }
+
+    /* Brand Slogan - 品牌标语（左侧） */
+    .fixed-contact-brand {
+        text-align: left;
+        font-size: 10px;
+        font-weight: 600;
+        color: #34495e;
+        letter-spacing: 0.3px;
+        line-height: 1.4;
+        background: linear-gradient(135deg, #4DD0BF 0%, #3BB9A8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-right: 5px;
+    }
+
+    /* Phone Numbers - 电话号码（中间） */
+    .fixed-contact-phones {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fixed-contact-phones a {
+        color: #2c3e50;
+        text-decoration: none;
+        font-size: 11px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        letter-spacing: 0.3px;
+        white-space: nowrap;
+    }
+
+    .fixed-contact-phones a:hover {
+        color: #4DD0BF;
+    }
+
+    /* 只在第一个电话号码前显示图标 */
+    .fixed-contact-phones a:first-child::before {
+        content: '☎ ';
+        color: #95a5a6;
+        opacity: 0.7;
+        font-size: 12px;
+        margin-right: 4px;
+    }
+
+    /* QR Code - 二维码（右侧） */
+    .fixed-contact-qr {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        justify-self: end;
+    }
+
+    .fixed-contact-qr img {
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        border: 2px solid #e8f4f3;
+        box-shadow: 0 2px 8px rgba(77, 208, 191, 0.15);
+        transition: all 0.3s ease;
+    }
+
+    .fixed-contact-qr:hover img {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(77, 208, 191, 0.25);
+    }
+
+    .fixed-contact-qr:active {
+        transform: scale(0.98);
+    }
+
+    /* QR Code Modal - 二维码模态框 */
+    .qr-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1002;
+        align-items: center;
+        justify-content: center;
+        animation: fadeIn 0.3s;
+    }
+
+    .qr-modal.active {
+        display: flex;
+    }
+
+    .qr-modal-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
         text-align: center;
+        animation: scaleIn 0.3s;
+        max-width: 90%;
+    }
+
+    .qr-modal-content img {
+        width: 280px;
+        height: 280px;
+        border-radius: 8px;
+    }
+
+    .qr-modal-content p {
+        margin-top: 15px;
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .qr-modal-close {
+        margin-top: 15px;
+        padding: 10px 30px;
+        background: #E31E24;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes scaleIn {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+}
+
+@media (max-width: 480px) {
+    .fixed-contact {
+        padding: 10px 12px;
+    }
+
+    .fixed-contact-phones a {
+        font-size: 10px;
+        gap: 4px;
+    }
+
+    .fixed-contact-brand {
+        font-size: 10px;
+    }
+
+    .fixed-contact-qr img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .qr-modal-content img {
+        width: 240px;
+        height: 240px;
     }
 }

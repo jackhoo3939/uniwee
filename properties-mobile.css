@@ -1,0 +1,90 @@
+/* UniWee网站 - 房源详情页移动端响应式样式表 */
+/* Properties Page Mobile Responsive Styles */
+
+/*
+ * 此CSS文件专门为91个房源详情页提供移动端响应式支持
+ * 使用 !important 覆盖内联样式
+ */
+
+@media (max-width: 768px) {
+    /* Property Hero Section - 房源横幅区域 */
+    .property-hero {
+        padding: 40px 0 !important;
+    }
+
+    .property-hero h1 {
+        font-size: 32px !important;
+        padding: 0 20px !important;
+    }
+
+    .property-hero .location {
+        font-size: 16px !important;
+    }
+
+    /* Property Content - 房源内容区域 */
+    .property-content {
+        padding: 40px 0 !important;
+    }
+
+    /* Property Layout - 房源布局（从2列改为1列） */
+    .property-layout {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+
+    /* Property Details - 房源详情 */
+    .property-details h2 {
+        font-size: 28px !important;
+    }
+
+    .property-features h3,
+    .info-section h4 {
+        font-size: 18px !important;
+    }
+
+    .property-description,
+    .property-features ul li,
+    .info-section p {
+        font-size: 15px !important;
+    }
+
+    /* CTA Buttons - 行动按钮（从横向改为纵向） */
+    .cta-buttons {
+        flex-direction: column !important;
+    }
+
+    .cta-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Property Image - 房源图片 */
+    .property-image-main {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* More optimizations for small screens - 小屏幕进一步优化 */
+    .property-hero h1 {
+        font-size: 24px !important;
+    }
+
+    .property-hero .location {
+        font-size: 14px !important;
+    }
+
+    .property-details h2 {
+        font-size: 24px !important;
+    }
+
+    .property-features,
+    .info-section {
+        padding: 20px !important;
+    }
+
+    .property-features h3,
+    .info-section h4 {
+        font-size: 16px !important;
+    }
+}

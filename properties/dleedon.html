@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>D'Leedon - UniWee</title>
 <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../properties-mobile.css">
 <style>
 .property-hero{background:linear-gradient(135deg,#4a5f7f 0%,#5a6f8f 100%);padding:60px 0;text-align:center;color:#fff}
 .property-hero h1{font-size:48px;margin-bottom:10px}
@@ -30,9 +31,40 @@
 </style>
 </head>
 <body>
-<header class="header"><div class="container"><div class="header-content"><div class="logo"><a href="../index.html"><img src="../logo1217-2.png" alt="UniWee Logo"></a></div><nav class="nav-menu"><a href="../index.html#footer">房源</a><a href="../student-services.html">学生服务</a><a href="../index.html#contact">联系我们</a></nav><div class="header-right"><div class="contact-info"><p>+65 9666 6891</p><p>+86 13823383679</p></div><div class="social-icons"><img src="../wechat.jpg" alt="WeChat QR Code" class="qr-code"></div></div></div></div></header>
+<header class="header"><div class="container"><div class="header-content"><div class="logo"><a href="../index.html"><img src="../logo1217-2.png" alt="UniWee Logo"></a></div><button class="hamburger-menu" id="hamburgerBtn" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav-menu" id="navMenu"><a href="../index.html#footer">房源</a><a href="../student-services.html">学生服务</a><a href="../index.html#contact">联系我们</a></nav><div class="header-right"><div class="contact-info"><p>+65 9666 6891</p><p>+86 13823383679</p></div><div class="social-icons"><img src="../wechat.jpg" alt="WeChat QR Code" class="qr-code"></div></div></div></div></header>
 <section class="property-hero"><div class="container"><h1>D'Leedon</h1><p class="location">Leedon Heights | District 10</p></div></section>
 <section class="property-content"><div class="container"><div class="property-layout"><div class="property-image-main"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600" alt="D'Leedon"></div><div class="property-details"><h2>关于 D'Leedon</h2><div class="property-description"><p>D'Leedon(丽敦苑)是顶级豪华公寓。</p><p>永久地契,配备度假村式设施。</p></div><div class="property-features"><h3>房源特色</h3><ul><li>位置:第10区优质地段</li><li>房型:2至5房</li><li>产权:永久地契</li><li>设施:度假村式</li></ul></div><div class="cta-buttons"><a href="../index.html#contact" class="cta-btn btn-primary">立即咨询</a><a href="../index.html" class="cta-btn btn-secondary">返回首页</a></div></div></div></div></section>
 <div class="bottom-footer"><div class="container"><div class="bottom-footer-content"><div class="footer-links"><a href="../about.html">关于我们</a><a href="../terms.html">使用条款</a><a href="../privacy.html">隐私政策</a><a href="../index.html#contact">联系我们</a></div><div class="footer-brand"><h3>UniWee</h3><p>新加坡留学生首选公寓品牌</p></div><div class="social-media"><a href="https://facebook.com/uniwee" target="_blank" class="social-icon">Facebook</a><a href="https://instagram.com/uniwee" target="_blank" class="social-icon">Instagram</a><a href="https://youtube.com/@uniwee" target="_blank" class="social-icon">YouTube</a><a href="https://linkedin.com/company/uniwee" target="_blank" class="social-icon">LinkedIn</a><a href="https://tiktok.com/@uniwee" target="_blank" class="social-icon">TikTok</a></div></div><div class="footer-contact" id="contact"><div class="contact-section"><h4>联系我们</h4><div class="contact-details"><div class="contact-phones"><p><strong>新加坡:</strong> +65 9666 6891</p><p><strong>中国:</strong> +86 13823383679</p></div><div class="contact-qr"><img src="../wechat.jpg" alt="微信二维码" class="footer-qr-code"><p>扫码添加微信咨询</p></div></div></div></div><p class="copyright">&copy; 2024 UniWee. All Rights Reserved.</p></div></div>
+    <!-- Fixed Bottom Contact Bar - 固定底部联系栏（仅移动端显示） -->
+    <div class="fixed-bottom-contact">
+        <div class="fixed-contact-brand">
+            留学生新加坡<br>公寓首选品牌
+        </div>
+        <div class="fixed-contact-phones">
+            <a href="tel:+6596666891">+65 9666 6891</a>
+            <a href="tel:+8613823383679">+86 13823383679</a>
+        </div>
+        <div class="fixed-contact-qr">
+            <img src="../wechat.jpg" alt="微信二维码">
+        </div>
+    </div>
+
+    <!-- QR Code Modal - 二维码放大模态框 -->
+    <div class="qr-modal" id="qrModal">
+        <div class="qr-modal-content">
+            <img src="../wechat.jpg" alt="微信二维码">
+            <p>扫码添加微信咨询</p>
+            <button class="qr-modal-close" id="qrModalClose">关闭</button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Script - 移动端菜单脚本 -->
+    <script src="../mobile-menu.js"></script>
+
 </body>
 </html>
